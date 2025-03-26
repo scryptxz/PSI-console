@@ -37,12 +37,17 @@ for (let i = 0; i < images.length; i++) {
 }
 
 // Formatação do título
-document.querySelector(".metadata-item").style.display = "flex";
-document.querySelector(".metadata-item").style.flexDirection = "row-reverse";
-document.querySelector(".metadata-item").style.justifyContent = "center";
-document.querySelector(".metadata-item").style.gap = "10px";
-document.querySelector(".metadata-item").style.float = "none";
+let tituloContainer = document.querySelector(".metadata-item");
+tituloContainer.style.display = "flex";
+tituloContainer.style.flexDirection = "row-reverse";
+tituloContainer.style.justifyContent = "center";
+tituloContainer.style.gap = "10px";
+tituloContainer.style.float = "none";
 
+let tituloPrincipal = document.querySelector(".metadata-item > h1");
 document.querySelector(".metadata-item > h2").style.fontSize = "25px";
-document.querySelector(".metadata-item > p").style.fontSize = "26px";
-document.querySelector(".metadata-item > p").style.color = "#D1170E";
+
+let tituloNumero = document.querySelector(".metadata-item > p");
+tituloNumero.style.fontSize = "26px";
+tituloNumero.style.marginTop = "-4px";
+tituloNumero.style.color = "#D1170E";
