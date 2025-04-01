@@ -1,4 +1,4 @@
-// Link do site: https://www.last.fm/pt/user/ScryptRG/library/albums?date_preset=LAST_30_DAYS&page=1
+// Link do site: https://www.last.fm/user/ScryptRG/library/albums
 
 // Função para mudar a lista de álbuns para grade
 function albumsGrid() {
@@ -46,13 +46,16 @@ function albumsGrid() {
   tituloContainer.style.gap = "10px";
   tituloContainer.style.float = "none";
 
-  let tituloPrincipal = document.querySelector(".metadata-item > h1");
-  document.querySelector(".metadata-item > h2").style.fontSize = "25px";
+  let tituloPrincipal = document.querySelector(".metadata-item > h2");
+  tituloPrincipal.style.fontSize = "25px";
 
   let tituloNumero = document.querySelector(".metadata-item > p");
   tituloNumero.style.fontSize = "26px";
   tituloNumero.style.marginTop = "-4px";
   tituloNumero.style.color = "#D1170E";
+
+  let anuncio = document.querySelector(".chartlist-break");
+  anuncio.style.display = "none";
 }
 
 albumsGrid();
