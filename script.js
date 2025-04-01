@@ -1,4 +1,4 @@
-// Link do site: https://www.last.fm/user/ScryptRG/library/albums
+// Link do site: https://www.last.fm/pt/user/ScryptRG/library/albums
 
 // Função para mudar a lista de álbuns para grade
 function albumsGrid() {
@@ -54,8 +54,9 @@ function albumsGrid() {
   tituloNumero.style.marginTop = "-4px";
   tituloNumero.style.color = "#D1170E";
 
+  // Remove o anúncio quando você não está logado
   let anuncio = document.querySelector(".chartlist-break");
-  anuncio.style.display = "none";
+  if (anuncio) anuncio.style.display = "none";
 }
 
 albumsGrid();
